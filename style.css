@@ -1,0 +1,204 @@
+/* =========================
+   PREMIUM BASE
+========================= */
+* {
+  margin: 1;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  color: #ffffff;
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* =========================
+   BACKGROUND VIDEO
+========================= */
+#bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+}
+
+/* Gradient luxury overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 15, 35, 0.9),
+    rgba(31, 42, 68, 0.85),
+    rgba(10, 102, 194, 0.8)
+  );
+  z-index: -2;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+.portfolio-wrapper {
+  width: 100%;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ffd369, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+h3,
+h4 {
+  color: #cdd9ff;
+}
+
+p {
+  color: #e0e0e0;
+  max-width: 780px;
+  margin: auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+td a {
+  padding: 10px 14px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+td a:hover {
+  background: linear-gradient(90deg, #ffd369, #0a66c2);
+  color: #000;
+  box-shadow: 0 0 25px rgba(255, 211, 105, 0.6);
+}
+
+/* =========================
+   SECTION LAYOUT
+========================= */
+section {
+  padding: 10px 0;
+}
+
+/* =========================
+   GLASS CARDS
+========================= */
+table {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td {
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Lift on hover */
+table td:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+#a3 table table {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s ease;
+}
+
+#a3 table table:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   BUTTON STYLE
+========================= */
+a[href*="project"] {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ffd369, #0a66c2);
+  color: #000;
+  font-weight: 700;
+}
+
+a[href*="project"]:hover {
+  filter: brightness(1.1);
+}
+
+/* =========================
+   HR LINE
+========================= */
+hr {
+  border: none;
+  height: 2px;
+  width: 70%;
+  margin: 50px auto;
+  background: linear-gradient(to right, transparent, #ffd369, transparent);
+}
+
+/* =========================
+   IMAGES
+========================= */
+img {
+  border-radius: 18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: linear-gradient(90deg, #0a66c2, #1f2a44);
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer strong {
+  color: #ffd369;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  table {
+    width: 100% !important;
+  }
+
+  td {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+  }
+}
