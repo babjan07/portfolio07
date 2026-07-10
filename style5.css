@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6fb;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Table styling */
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #ffffff;
+}
+
+table,
+th,
+td {
+  border: 2px solid #34495e;
+}
+
+/* 🔹 First row (header) */
+tr:first-child th {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px;
+}
+
+/* 🔹 First column (Days) */
+tr:not(:first-child) th:first-child {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px;
+}
+
+/* Other table cells */
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Hover effect (excluding last row) */
+tr:not(:last-child):hover {
+  background-color: #ecf3ff;
+}
+
+/* 🔸 Lunch Break */
+th[rowspan] {
+  background-color: #f1c40f;
+  color: #000;
+  font-weight: bold;
+}
+
+/* 🔸 Colspan highlight (Python Class etc.) */
+th[colspan]:not(:first-child) {
+  background-color: #1abc9c;
+  color: white;
+}
+
+/* ❌ Last row (Note) – NO color */
+tr:last-child td {
+  background-color: transparent;
+  font-style: italic;
+  font-weight: 600;
+  color: #555;
+}

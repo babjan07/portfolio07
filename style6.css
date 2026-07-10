@@ -1,0 +1,72 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #befafe;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Main heading */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Section headings */
+h2 {
+  color: #34495e;
+  margin: 35px 0 15px;
+  font-size: 22px;
+}
+
+/* Iframe common styling */
+iframe {
+  display: block;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Website iframe */
+iframe[src*="thetapacademy"] {
+  border: 4px solid #4a90e2;
+}
+
+/* Google Maps iframe */
+iframe[src*="google.com/maps"] {
+  border: 4px solid #27ae60;
+}
+
+/* YouTube iframe */
+iframe[src*="youtube"] {
+  border: 4px solid #e74c3c;
+}
+
+/* Movie iframe (Google Drive) */
+iframe[src*="drive.google.com"] {
+  border: 4px solid #8e44ad;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}

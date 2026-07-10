@@ -1,0 +1,121 @@
+/* ===============================
+   Global Reset & Base Styling
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.7;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ===============================
+   Headings
+================================ */
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  color: #1a237e;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  margin: 30px 0 12px;
+  font-size: 1.6rem;
+  color: #0d47a1;
+  border-left: 5px solid #0d47a1;
+  padding-left: 12px;
+}
+
+/* ===============================
+   Lists
+================================ */
+ol,
+ul {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* ===============================
+   Description / Glossary Section
+================================ */
+dl {
+  margin-left: 10px;
+}
+
+dl li {
+  list-style: none;
+  font-weight: bold;
+  color: #263238;
+  margin-top: 15px;
+}
+
+dl p {
+  margin: 8px 0 15px 25px;
+  color: #555;
+  text-align: justify;
+}
+
+/* ===============================
+   Personal Development Plan
+================================ */
+ol ul {
+  list-style-type: circle;
+  margin-top: 6px;
+  margin-left: 25px;
+  color: #444;
+}
+
+/* ===============================
+   Horizontal Rule
+================================ */
+hr {
+  margin: 35px 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #bbb, transparent);
+}
+
+/* ===============================
+   Card-like Section Effect
+================================ */
+h2 + ol,
+h2 + ul,
+h2 + dl {
+  background: #ffffff;
+  padding: 18px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   Responsive Design
+================================ */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}

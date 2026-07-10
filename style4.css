@@ -1,0 +1,138 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #f2f6ff;
+  padding: 20px;
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Form container */
+form {
+  width: 650px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Legend styling */
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+/* Table layout */
+table {
+  width: 100%;
+}
+
+/* Table cells */
+td {
+  padding: 8px 5px;
+  vertical-align: middle;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs, select, textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a90e2;
+}
+
+/* Radio & checkbox spacing */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+/* File input */
+input[type="file"] {
+  border: none;
+}
+
+/* Submit & reset buttons */
+input[type="submit"],
+input[type="reset"] {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+/* Reset button */
+input[type="reset"] {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Hover effects */
+input[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+input[type="reset"]:hover {
+  background-color: #c0392b;
+}
+
+/* Comments textarea */
+textarea {
+  resize: vertical;
+}
+
+/* Small spacing */
+br {
+  line-height: 1.5;
+}
